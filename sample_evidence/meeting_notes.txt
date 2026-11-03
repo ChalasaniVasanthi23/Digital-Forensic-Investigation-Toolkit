@@ -1,0 +1,3 @@
+Training case: CASE-001
+This is synthetic practice evidence.
+No real user data is included.

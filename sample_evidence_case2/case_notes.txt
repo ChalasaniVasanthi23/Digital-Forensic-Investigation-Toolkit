@@ -1,0 +1,16 @@
+CASE ID: CASE-002
+CASE NAME: USB Data Theft Investigation
+
+Investigation Objective:
+To examine simulated USB connection and file-copy activity.
+
+Evidence Summary:
+1. USB connection history is available.
+2. Simulated file-copy records are available.
+3. The records indicate a USB device connection and file-copy events.
+
+Important Note:
+All evidence in this case is simulated for educational purposes.
+No actual USB device activity was collected.
+
+Examiner: Vasanthi

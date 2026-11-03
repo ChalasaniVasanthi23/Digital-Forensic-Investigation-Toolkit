@@ -1,0 +1,22 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Generated investigation reports (keep the folder itself)
+reports/*
+!reports/.gitkeep
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep screenshot folder available in GitHub
+screenshots/*
+!screenshots/.gitkeep

@@ -1,0 +1,1 @@
+Harmless sample file with a hidden-style filename for testing triage flags.

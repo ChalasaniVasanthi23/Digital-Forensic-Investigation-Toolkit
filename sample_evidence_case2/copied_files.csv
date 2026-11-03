@@ -1,0 +1,4 @@
+timestamp,file_name,size_bytes,source_path,destination_device,user
+2026-11-03 09:18:30,employee_records.xlsx,24576,C:\TrainingData\employee_records.xlsx,SanDisk USB,Vasanthi
+2026-11-03 09:19:05,project_backup.zip,102400,C:\TrainingData\project_backup.zip,SanDisk USB,Vasanthi
+2026-11-03 09:20:12,network_diagram.pdf,8192,C:\TrainingData\network_diagram.pdf,SanDisk USB,Vasanthi

@@ -1,0 +1,5 @@
+timestamp,device_name,device_id,event,user
+2026-11-03 09:10:00,SanDisk USB,USBSTOR\DISK&VEN_SANDISK,Connected,Vasanthi
+2026-11-03 09:12:15,SanDisk USB,USBSTOR\DISK&VEN_SANDISK,Mounted,Vasanthi
+2026-11-03 09:18:30,SanDisk USB,USBSTOR\DISK&VEN_SANDISK,File_Copy_Activity,Vasanthi
+2026-11-03 09:25:00,SanDisk USB,USBSTOR\DISK&VEN_SANDISK,Disconnected,Vasanthi
