@@ -1,0 +1,4 @@
+﻿relative_path,file_name,extension,detected_file_type,extension_check,size_bytes,created_utc,modified_utc,accessed_utc,sha256,triage_flags,analysis_status
+case_notes.txt,case_notes.txt,.txt,Text/UTF-8 or unknown,No known binary signature,480,2026-11-03T07:19:30+00:00,2026-11-03T19:40:47+00:00,2026-11-03T19:40:47+00:00,459b90b245551c9021c688b27347638f2bbfd3e6884cf2a7af032cd0577e5762,,hashed
+copied_files.csv,copied_files.csv,.csv,Text/UTF-8 or unknown,No known binary signature,380,2026-11-03T07:18:38+00:00,2026-11-03T19:40:47+00:00,2026-11-03T19:40:47+00:00,c7b940620ae53cf40f4f55c49f4e5da4215c820ee9c0dcf2ec8bfcb7313d93a6,,hashed
+usb_connection_history.csv,usb_connection_history.csv,.csv,Text/UTF-8 or unknown,No known binary signature,360,2026-11-03T07:17:36+00:00,2026-11-03T19:40:47+00:00,2026-11-03T19:40:47+00:00,b41b8baf222ea34e36c31f26387493951080f84a1a3bfc93a1083d35f81355e8,,hashed

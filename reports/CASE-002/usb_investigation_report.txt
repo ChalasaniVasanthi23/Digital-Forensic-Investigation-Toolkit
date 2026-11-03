@@ -1,0 +1,41 @@
+USB DATA THEFT INVESTIGATION REPORT
+========================================
+Case ID: CASE-002
+Examiner: Not specified
+Evidence type: SIMULATED TRAINING DATA
+
+1. USB CONNECTION TIMELINE
+------------------------------
+2026-11-03 09:10:00 | SanDisk USB | Connected | User: Vasanthi
+2026-11-03 09:12:15 | SanDisk USB | Mounted | User: Vasanthi
+2026-11-03 09:18:30 | SanDisk USB | File_Copy_Activity | User: Vasanthi
+2026-11-03 09:25:00 | SanDisk USB | Disconnected | User: Vasanthi
+
+2. FILE COPY RECORDS
+------------------------------
+2026-11-03 09:18:30 | employee_records.xlsx | 24576 bytes | Destination: SanDisk USB
+2026-11-03 09:19:05 | project_backup.zip | 102400 bytes | Destination: SanDisk USB
+2026-11-03 09:20:12 | network_diagram.pdf | 8192 bytes | Destination: SanDisk USB
+
+3. INVESTIGATION SUMMARY
+------------------------------
+USB devices recorded: 1
+Users recorded: Vasanthi
+Connection events: 4
+File-copy records: 3
+Total recorded file size: 135168 bytes
+
+Event counts:
+  Connected: 1
+  Disconnected: 1
+  File_Copy_Activity: 1
+  Mounted: 1
+
+4. FINDINGS AND LIMITATIONS
+------------------------------
+The simulated records show a USB connection, mount,
+file-copy activity and disconnection.
+Three simulated file-copy records are present.
+These records alone do not prove unauthorized theft.
+No actual USB device or Windows event logs were examined.
+All evidence is simulated for educational purposes.

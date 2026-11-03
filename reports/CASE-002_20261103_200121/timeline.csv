@@ -1,0 +1,10 @@
+﻿timestamp_utc,event_type,relative_path,sha256
+2026-11-03T07:17:36+00:00,filesystem_created,usb_connection_history.csv,b41b8baf222ea34e36c31f26387493951080f84a1a3bfc93a1083d35f81355e8
+2026-11-03T07:18:38+00:00,filesystem_created,copied_files.csv,c7b940620ae53cf40f4f55c49f4e5da4215c820ee9c0dcf2ec8bfcb7313d93a6
+2026-11-03T07:19:30+00:00,filesystem_created,case_notes.txt,459b90b245551c9021c688b27347638f2bbfd3e6884cf2a7af032cd0577e5762
+2026-11-03T19:40:47+00:00,filesystem_accessed,case_notes.txt,459b90b245551c9021c688b27347638f2bbfd3e6884cf2a7af032cd0577e5762
+2026-11-03T19:40:47+00:00,filesystem_modified,case_notes.txt,459b90b245551c9021c688b27347638f2bbfd3e6884cf2a7af032cd0577e5762
+2026-11-03T19:40:47+00:00,filesystem_accessed,copied_files.csv,c7b940620ae53cf40f4f55c49f4e5da4215c820ee9c0dcf2ec8bfcb7313d93a6
+2026-11-03T19:40:47+00:00,filesystem_modified,copied_files.csv,c7b940620ae53cf40f4f55c49f4e5da4215c820ee9c0dcf2ec8bfcb7313d93a6
+2026-11-03T19:40:47+00:00,filesystem_accessed,usb_connection_history.csv,b41b8baf222ea34e36c31f26387493951080f84a1a3bfc93a1083d35f81355e8
+2026-11-03T19:40:47+00:00,filesystem_modified,usb_connection_history.csv,b41b8baf222ea34e36c31f26387493951080f84a1a3bfc93a1083d35f81355e8

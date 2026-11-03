@@ -1,0 +1,31 @@
+DIGITAL FORENSIC INVESTIGATION TOOLKIT
+============================================
+Case ID: CASE-001
+Examiner: Vasanthi
+Analysis started (UTC): 2026-11-03T19:48:31+00:00
+Source folder: C:\Users\Chalasani Vasanthi\Downloads\Digital Forensic Tool Kit\DFIR_Toolkit_GitHub\sample_evidence
+Notes: None
+
+SUMMARY
+Files discovered: 4
+Files successfully hashed: 4
+Files with triage flags: 2
+Duplicate SHA-256 groups: 0
+Total size (bytes): 493
+Processing errors: 0
+
+FILES REQUIRING REVIEW
+- hidden_review.txt | Review filename pattern: ^\.?hidden
+- sample_script.ps1 | Review file type: .ps1
+
+DUPLICATE FILE GROUPS
+- No duplicate file hashes found.
+
+INTERPRETATION
+Flags identify items for manual review; they do not establish maliciousness.
+Filesystem timestamps are not definitive proof of when an action occurred.
+
+LIMITATIONS
+- Preliminary file triage only; not a forensic acquisition tool.
+- Does not parse deleted data, registry, event logs, browser artifacts or RAM.
+- Use validated tools and documented procedures for real investigations.

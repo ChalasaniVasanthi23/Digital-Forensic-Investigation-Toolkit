@@ -1,0 +1,30 @@
+DIGITAL FORENSIC INVESTIGATION TOOLKIT
+============================================
+Case ID: CASE-002
+Examiner: Vasanthi
+Analysis started (UTC): 2026-11-03T20:01:21+00:00
+Source folder: C:\Users\Chalasani Vasanthi\Downloads\Digital Forensic Tool Kit\DFIR_Toolkit_GitHub\sample_evidence_case2
+Notes: None
+
+SUMMARY
+Files discovered: 3
+Files successfully hashed: 3
+Files with triage flags: 0
+Duplicate SHA-256 groups: 0
+Total size (bytes): 1220
+Processing errors: 0
+
+FILES REQUIRING REVIEW
+- No configured triage flags were triggered.
+
+DUPLICATE FILE GROUPS
+- No duplicate file hashes found.
+
+INTERPRETATION
+Flags identify items for manual review; they do not establish maliciousness.
+Filesystem timestamps are not definitive proof of when an action occurred.
+
+LIMITATIONS
+- Preliminary file triage only; not a forensic acquisition tool.
+- Does not parse deleted data, registry, event logs, browser artifacts or RAM.
+- Use validated tools and documented procedures for real investigations.

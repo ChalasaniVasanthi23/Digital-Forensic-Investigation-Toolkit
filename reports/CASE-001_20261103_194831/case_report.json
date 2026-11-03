@@ -1,0 +1,124 @@
+{
+  "case": {
+    "case_id": "CASE-001",
+    "examiner": "Vasanthi",
+    "notes": "",
+    "analysis_started_utc": "2026-11-03T19:48:31+00:00",
+    "source_folder": "C:\\Users\\Chalasani Vasanthi\\Downloads\\Digital Forensic Tool Kit\\DFIR_Toolkit_GitHub\\sample_evidence",
+    "tool": "Digital Forensic Investigation Toolkit",
+    "tool_version": "2.0.0"
+  },
+  "summary": {
+    "files_discovered": 4,
+    "files_hashed": 4,
+    "files_with_triage_flags": 2,
+    "duplicate_hash_groups": 0,
+    "total_size_bytes": 493,
+    "processing_errors": 0
+  },
+  "flagged_files": [
+    {
+      "relative_path": "hidden_review.txt",
+      "file_name": "hidden_review.txt",
+      "extension": ".txt",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 76,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:48+00:00",
+      "sha256": "2f2f403f01444ee2bd4423e6a5f74dd0ad3ffc4b686a34ca40460e36a9301945",
+      "triage_flags": [
+        "Review filename pattern: ^\\.?hidden"
+      ],
+      "analysis_status": "hashed"
+    },
+    {
+      "relative_path": "sample_script.ps1",
+      "file_name": "sample_script.ps1",
+      "extension": ".ps1",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 164,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:47+00:00",
+      "sha256": "cae0d02798d601c7c7a138ec92eb73a1cf1d1f4c89f7aee656a1d8b779720df9",
+      "triage_flags": [
+        "Review file type: .ps1"
+      ],
+      "analysis_status": "hashed"
+    }
+  ],
+  "duplicate_groups": [],
+  "processing_errors": [],
+  "inventory": [
+    {
+      "relative_path": "hidden_review.txt",
+      "file_name": "hidden_review.txt",
+      "extension": ".txt",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 76,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:48+00:00",
+      "sha256": "2f2f403f01444ee2bd4423e6a5f74dd0ad3ffc4b686a34ca40460e36a9301945",
+      "triage_flags": [
+        "Review filename pattern: ^\\.?hidden"
+      ],
+      "analysis_status": "hashed"
+    },
+    {
+      "relative_path": "meeting_notes.txt",
+      "file_name": "meeting_notes.txt",
+      "extension": ".txt",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 92,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:48+00:00",
+      "sha256": "64d77fa36e86ddf5413afdfad5f7117683ae9bf452b5033ebb1d2e8b18603584",
+      "triage_flags": [],
+      "analysis_status": "hashed"
+    },
+    {
+      "relative_path": "readme_evidence.txt",
+      "file_name": "readme_evidence.txt",
+      "extension": ".txt",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 161,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:47+00:00",
+      "sha256": "1f422178ac9f68f05722629c930d54534ca49fc5c59c6831176a992f1fac3aa2",
+      "triage_flags": [],
+      "analysis_status": "hashed"
+    },
+    {
+      "relative_path": "sample_script.ps1",
+      "file_name": "sample_script.ps1",
+      "extension": ".ps1",
+      "detected_file_type": "Text/UTF-8 or unknown",
+      "extension_check": "No known binary signature",
+      "size_bytes": 164,
+      "created_utc": "2026-11-03T07:00:32+00:00",
+      "modified_utc": "2026-11-03T19:40:47+00:00",
+      "accessed_utc": "2026-11-03T19:40:47+00:00",
+      "sha256": "cae0d02798d601c7c7a138ec92eb73a1cf1d1f4c89f7aee656a1d8b779720df9",
+      "triage_flags": [
+        "Review file type: .ps1"
+      ],
+      "analysis_status": "hashed"
+    }
+  ],
+  "limitations": [
+    "This is preliminary file triage, not a validated forensic acquisition tool.",
+    "Filesystem timestamps are leads and can be changed or affected by copying.",
+    "A triage flag is not proof of malicious activity.",
+    "File signature identification covers common formats only.",
+    "Deleted files, disk unallocated space, registry hives, event logs and memory are not parsed."
+  ]
+}
