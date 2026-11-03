@@ -1,133 +1,206 @@
 # Digital Forensic Investigation Toolkit (DFIT)
 
-A Python-based educational toolkit for preliminary digital-forensics triage of **working copies** of evidence files. It inventories files, calculates SHA-256 hashes, identifies selected file signatures, flags items for review, groups duplicate files, and creates investigation reports.
+A Python-based Digital Forensic Investigation Toolkit designed for preliminary digital-forensics triage and evidence analysis.
 
-> **Important:** This is an educational triage tool, not a validated forensic acquisition platform. It does not create forensic disk images, guarantee chain of custody, or prove that suspicious activity was malicious. The USB investigation uses simulated training CSV data. Never run investigations on systems or data without authorization.
+DFIT helps investigators analyze working copies of evidence files by generating SHA-256 hashes, identifying file signatures, detecting suspicious file indicators, grouping duplicate files, creating evidence timelines, and generating investigation reports.
+
+> **Disclaimer:** This is an educational digital-forensics triage tool, not a certified forensic acquisition platform. It does not create forensic disk images, guarantee chain of custody, or prove malicious activity. USB investigation is performed using simulated training data. Always obtain authorization before analyzing any system or data.
 
 ## Features
 
-- Recursive evidence-folder inventory
-- SHA-256 hashing for file-integrity comparison
-- File size, extension, and filesystem timestamps
-- Basic filename/extension-based triage flags
-- File-signature identification and extension-mismatch warnings
-- Duplicate-file grouping using SHA-256
-- CSV evidence inventory and JSON/text case reports
-- Timestamp-sorted file activity timeline
-- Simulated USB connection and file-copy activity analysis
-- Unit tests using Python's built-in `unittest` framework
+- Recursive evidence file inventory
+- SHA-256 file hashing for integrity comparison
+- File size, extension, and filesystem timestamp collection
+- Suspicious filename and extension detection
+- File signature identification
+- File extension mismatch warnings
+- Duplicate file detection using SHA-256 hashes
+- Evidence inventory generation in CSV format
+- Investigation reports in JSON and TXT formats
+- Timestamp-based evidence timeline generation
+- Simulated USB connection activity analysis
+- Simulated USB file-copy investigation
+- Automated unit testing using Python unittest
+
+## Technologies Used
+
+- Python 3
+- SHA-256 Hashing
+- CSV and JSON
+- File System Analysis
+- Digital Forensics
+- Python unittest
 
 ## Requirements
 
 - Python 3.9 or later
-- Windows, macOS, or Linux
+- Windows, Linux, or macOS
 - No third-party Python packages required
 
-Check your Python installation:
+Check Python installation:
 
 ```bash
 python --version
 ```
 
-On some systems, use `python3` instead of `python`.
-
-## Project structure
+## Project Structure
 
 ```text
-Digital_Forensic_Investigation_Toolkit/
+Digital-Forensic-Investigation-Toolkit/
+│
 ├── src/
 │   ├── dfit.py
 │   └── usb_case_analyzer.py
+│
+├── tests/
+│   └── test_dfit.py
+│
 ├── sample_evidence/
 │   ├── hidden_review.txt
 │   ├── meeting_notes.txt
 │   ├── readme_evidence.txt
 │   └── sample_script.ps1
+│
 ├── sample_evidence_case2/
 │   ├── case_notes.txt
 │   ├── copied_files.csv
 │   └── usb_connection_history.csv
-├── tests/
-│   └── test_dfit.py
-├── reports/                 # Generated reports are not committed
-├── screenshots/             # Add your own application screenshots here
+│
+├── screenshots/
+│   ├── 01_project_execution.png
+│   ├── 02_sha256_hashing.png
+│   ├── 03_evidence_analysis.png
+│   ├── 04_suspicious_file_detection.png
+│   ├── 05_evidence_timeline.png
+│   ├── 06_usb_investigation_execution.png
+│   ├── 07_usb_investigation_report.png
+│   ├── 08_unit_testing.png
+│   └── 09_generated_reports.png
+│
+├── reports/
+│   └── .gitkeep
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-## Quick start
+## Installation and Execution
 
-Open a terminal in the project root (the folder containing `README.md`).
+### 1. Clone the Repository
 
-### Case 1 — Digital forensic file triage
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-Run the analyzer against the included sample evidence:
+Open the project directory:
+
+```bash
+cd Digital-Forensic-Investigation-Toolkit
+```
+
+### 2. Case 1 – Digital Forensic File Analysis
+
+Run the forensic analyzer using the sample evidence folder:
 
 ```bash
 python src/dfit.py analyze --source sample_evidence --case-id CASE-001 --examiner "Investigator"
 ```
 
-The tool creates a timestamped report directory under `reports/` containing:
+The tool analyzes the evidence files and generates investigation reports inside the `reports/` directory.
 
-- `evidence_inventory.csv` — file metadata and SHA-256 hashes
-- `timeline.csv` — file activity timeline based on available filesystem timestamps
-- `case_report.json` — structured case results
-- `case_report.txt` — readable case summary
+Generated files include:
 
-### Case 2 — Simulated USB activity investigation
+- `evidence_inventory.csv` – Evidence file details and SHA-256 hashes.
+- `timeline.csv` – File activity timeline based on available filesystem timestamps.
+- `case_report.json` – Structured investigation results.
+- `case_report.txt` – Readable investigation summary.
 
-First inventory and hash the second sample evidence folder:
+### 3. Case 2 – USB Activity Investigation
+
+First, analyze the second sample evidence folder:
 
 ```bash
 python src/dfit.py analyze --source sample_evidence_case2 --case-id CASE-002 --examiner "Investigator"
 ```
 
-Then analyze the simulated USB event and copy records:
+Then execute the USB investigation analyzer:
 
 ```bash
 python src/usb_case_analyzer.py
 ```
 
-The USB analyzer writes its summary to:
+The USB analyzer processes simulated USB connection and file-copy activity records.
+
+Expected report location:
 
 ```text
 reports/CASE-002/usb_investigation_report.txt
 ```
 
-The report summarizes connection events, users, file-copy records, and recorded byte totals. These are simulated records and must not be treated as proof of actual data theft.
+The report summarizes recorded USB connections, users, file-copy activities, and recorded data-transfer totals.
 
-## Run the tests
+**Note:** The USB investigation uses simulated CSV records. It does not monitor physical USB devices or establish actual data theft.
 
-From the project root:
+## Run Unit Tests
+
+Execute the following command from the project root:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-The tests cover SHA-256 calculation, triage flags, report generation, PDF signature identification, and duplicate-hash grouping.
+The unit tests cover implemented functionality such as:
+
+- SHA-256 hash calculation
+- Suspicious file triage flags
+- Report generation
+- File signature identification
+- Duplicate hash grouping
 
 ## Screenshots
 
-After running the project, add genuine screenshots to the `screenshots/` folder. Suggested screenshots:
+The following screenshots demonstrate the project execution and investigation results.
 
-1. Terminal showing Case 1 analysis completed.
-2. Generated evidence inventory CSV opened in a spreadsheet or text editor.
-3. Case report showing the SHA-256 and triage results.
-4. Terminal showing Case 2 USB analysis completed.
-5. USB investigation report output.
-6. Unit-test output showing the test results.
+| No. | Screenshot | Description |
+|---|---|---|
+| 01 | Project Execution | Forensic analysis execution |
+| 02 | SHA-256 Hashing | Evidence file hash results |
+| 03 | Evidence Analysis | Investigation report |
+| 04 | Suspicious File Detection | File triage indicators |
+| 05 | Evidence Timeline | Evidence activity timeline |
+| 06 | USB Investigation Execution | USB analyzer execution |
+| 07 | USB Investigation Report | USB investigation results |
+| 08 | Unit Testing | Automated test results |
+| 09 | Generated Reports | Generated investigation reports |
 
-Do not add screenshots containing private files, personal paths, usernames, or sensitive evidence.
+All screenshots are stored in the `screenshots/` directory.
 
 ## Limitations
 
-- Analyze a read-only or working copy of evidence; this tool does not acquire or preserve original media.
-- Filesystem timestamps can change when files are copied and are not, by themselves, reliable proof of an event.
-- Triage flags are heuristic indicators for human review, not malware verdicts.
-- File-signature checks cover only the signatures implemented in the source code.
-- The USB case is based on supplied simulated CSV records, not live Windows event logs or a physical USB device.
+- The toolkit is intended for educational and preliminary forensic triage purposes.
+- It analyzes working copies of evidence and does not acquire forensic disk images.
+- Filesystem timestamps may change when files are copied or modified.
+- Suspicious file indicators are heuristic warnings and do not prove malware infection.
+- File signature identification is limited to the signatures implemented in the source code.
+- Duplicate detection is based on SHA-256 hash comparison.
+- USB investigation uses simulated training CSV data rather than live device monitoring.
+- Investigation results require manual verification by an authorized investigator.
+
+## Future Enhancements
+
+- Integration with live Windows event logs.
+- Advanced file metadata analysis.
+- Additional file signature support.
+- Interactive graphical investigation dashboard.
+- Advanced forensic timeline visualization.
 
 ## License
 
-This project is provided under the MIT License. See [LICENSE](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Digital Forensic Investigation Toolkit (DFIT)**
+
+Developed as an educational cybersecurity and digital-forensics project.
